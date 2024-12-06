@@ -40,7 +40,10 @@ If you want to use custom dimensions (e.g., 1000x1250 instead of 1080x1350), you
 ## Instagram Grid Example
 
 To achieve an Instagram feed like the one below:  
+
 ![Instagram Grid Example](example/Florence.png)
+
+---
 
 1. **Set the Document Size**  
    For a 3x1 grid:  
