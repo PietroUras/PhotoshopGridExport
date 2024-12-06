@@ -4,6 +4,54 @@ This repository contains two Adobe Photoshop scripts to help you easily create I
 
 ---
 
+## Table of Contents
+1. [Grid Example](#grid-example)
+2. [How to Install](#how-to-install)
+3. [Workflow](#workflow)
+   - [Setup the Grid](#1-setup-the-grid)
+   - [Export the Grid](#2-export-the-grid)
+4. [Custom Dimensions](#custom-dimensions)
+5. [Scripts Included](#scripts-included)
+6. [Notes](#notes)
+7. [Results](#results)
+8. [License](#license)
+
+---
+
+## Grid Example
+
+Look at this image:
+
+![Instagram Grid Example](example/Florence.png)
+
+To achieve this result and export it as three separate photos, follow these steps:
+
+1. **Set the Document Size**  
+   For a 3x1 grid:  
+   - Width = `1080 x 3 = 3240 pixels`  
+   - Height = `1350 x 1 = 1350 pixels`  
+
+2. **Run the Scripts**  
+   - Use `photoshopGridSetup` to organize your grid.  
+   - After completing your composition and saving the file, run `exportPhotoshop` to generate individual posts.
+
+---
+
+## How to Install
+
+1. Download the scripts from this repository.
+2. Place the `.jsx` files in your Photoshop scripts directory:  
+   - On Windows:  
+     `C:\Program Files\Adobe\Adobe Photoshop [Version]\Presets\Scripts`  
+   - On macOS:  
+     `/Applications/Adobe Photoshop [Version]/Presets/Scripts`
+
+3. Restart Photoshop if it was open.
+
+4. Access the scripts from **File > Scripts > [Script Name]**.
+
+---
+
 ## Workflow
 
 ### 1. **Setup the Grid**
@@ -22,7 +70,7 @@ This repository contains two Adobe Photoshop scripts to help you easily create I
 ---
 
 ### 2. **Export the Grid**
-1. Run the script **`exportAsGrid`**.  
+1. Run the script **`exportPhotoshop`**.  
    This will:
    - Divide your document into individual slices.
    - Save each slice as a **JPEG** in a folder named after your PSD file.
@@ -37,47 +85,13 @@ If you want to use custom dimensions (e.g., 1000x1250 instead of 1080x1350), you
 
 ---
 
-## Instagram Grid Example
-
-To achieve an Instagram feed like the one below:  
-
-![Instagram Grid Example](example/Florence.png)
-
----
-
-1. **Set the Document Size**  
-   For a 3x1 grid:  
-   - Width = `1080 x 3 = 3240 pixels`  
-   - Height = `1350 x 1 = 1350 pixels`  
-
-2. **Run the Scripts**  
-   - Use `photoshopGridSetup` to organize your grid.  
-   - After completing your composition, run `exportPhotoshop` to generate individual posts.
-
----
-
 ## Scripts Included
 
 - **`photoshopGridSetup.jsx`**  
   Sets up a grid in your Photoshop document for an Instagram feed.
 
 - **`exportPhotoshop.jsx`**  
-  Divides the grid into slices and exports them as JPEGs into a folder called as the photoshop file.
-
----
-
-## How to Use
-
-1. Download the scripts from this repository.
-2. Place the `.jsx` files in your Photoshop scripts directory:  
-   - On Windows:  
-     `C:\Program Files\Adobe\Adobe Photoshop [Version]\Presets\Scripts`  
-   - On macOS:  
-     `/Applications/Adobe Photoshop [Version]/Presets/Scripts`
-
-3. Restart Photoshop if it was open.
-
-4. Access the scripts from **File > Scripts > [Script Name]**.
+  Divides the grid into slices and exports them as JPEGs into a folder named after the PSD file.
 
 ---
 
@@ -96,9 +110,6 @@ Check out my Instagram profile to see the results created using these scripts:
 
 ---
 
-### License
+## License
+
 This project is licensed under the MIT License.
-
----
-
-Let me know if you want further adjustments!
